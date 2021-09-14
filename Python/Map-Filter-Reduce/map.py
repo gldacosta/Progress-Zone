@@ -35,6 +35,9 @@ print(result)
 my_strings = ['a', 'b', 'c', 'd', 'e']
 my_numbers = [1,2,3,4,5]
 
-results = list(zip(my_strings, my_numbers))
+results1 = list(zip(my_strings, my_numbers))
+results = list(map(lambda x, y: (x, y), my_strings, my_numbers))
 
+print(results1)
 print(results)
+
